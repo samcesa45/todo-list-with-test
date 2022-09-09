@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
-import {FollowersProps} from '../../../type'
+import {FollowersProps} from '../../types/type'
 const url = "https://randomuser.me/api/?results=5"
 const intitalFollowers:FollowersProps[] = []
 const FollowerList = () => {

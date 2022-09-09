@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../Header/Header'
 import AddTodoForm from './AddTodoForm'
 import TodoItem from './TodoItem'
-import {Todo} from '../../../type'
+import {Todo} from '../../types/type'
 const lists:Todo[] = [
     {id:1, text:'Add milk',isCompleted:false},
     {id:2, text:'Add Cheese',isCompleted:true},

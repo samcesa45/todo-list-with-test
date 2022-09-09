@@ -1,4 +1,4 @@
-import {Todo,ToggleTodo} from '../../../type'
+import {Todo,ToggleTodo} from '../../types/type'
 
 type Props = {
     todo: Todo,
