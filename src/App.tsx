@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom"
+import Banner from "./component/Banner/Banner"
+import FollowersPage from "./Pages/FollowersPage/FollowersPage"
+import TodoPage from "./Pages/TodoPage/TodoPage"
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   
+    <>
+      <Banner/>
+    <Router>
+      <Routes>
+        <Route path='/' element={ <TodoPage/>} />
+        <Route path='/followers' element={ <FollowersPage/>} />
+       </Routes>
+      </Router>
+      </>
+      
+  )
 }
 
-export default App;
+export default App
+// import Book from "./Book"
+// import { BrowserRouter as Router,Routes,Route,NavLink } from "react-router-dom"
+// import Login from "./Login"
+
+// const App = () => {
+//   return (
+   
+   
+//     <Router>
+//       <Routes>
+//         <Route path="/book" element={<Book/> } />
+//         <Route path="/login" element={<Login/> } />
+//       </Routes>
+//       </Router>
+      
+//   )
+// }
+
+// export default App
