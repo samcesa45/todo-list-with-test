@@ -1,5 +1,5 @@
-import Banner from "../../component/Banner/Banner"
-import Todo from "../../component/Todo/Todo"
+
+import Todo from "../../component/Todo/Todos"
 
 
 type Props = {}

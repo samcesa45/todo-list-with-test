@@ -1,5 +1,5 @@
 import Followers from "../../component/Followers/Followers"
-import Banner from "../../component/Banner/Banner"
+
 
 
 type Props = {}
